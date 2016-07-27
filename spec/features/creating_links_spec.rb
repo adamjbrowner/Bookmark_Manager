@@ -1,6 +1,5 @@
 require 'capybara/rspec'
 require './app/models/link'
-require './app/app'
 
 feature 'Creating links' do
 
