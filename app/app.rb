@@ -44,7 +44,6 @@ class BookmarkManager < Sinatra::Base
   end
 
   post '/users' do
-    #If password and password confirmation are not the same:
     @user = User.create(email: params[:email], password: params[:password],
                       password_confirmation: params[:password_confirmation])
     if @user.save
