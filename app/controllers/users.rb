@@ -15,4 +15,11 @@ class BookmarkManager < Sinatra::Base
       erb :'users/new'
     end
   end
+
+  get '/users/reset' do
+    erb :'users/reset'
+  end
+
+  post '/users/reset' do
+  end
 end
